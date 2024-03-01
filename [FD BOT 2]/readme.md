@@ -5,6 +5,7 @@
 Prefix: !
 !product <TITLE | text>
 !poll <TITLE | text>
+In de code moet je de regel Embed nog zelf aanpassen!
 
 **Instaleren:**
 1) Maak een nieuwe application https://discord.com/developers/applications
