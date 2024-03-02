@@ -156,15 +156,4 @@ async def product(ctx, *, text: str):
     embed = discord.Embed(title=title, description=description, color=discord.Color.blue())
     await ctx.send(embed=embed)
 
-@bot.command()
-@commands.has_role(ADMIN_ROLE_ID)
-async def rules(ctx):
-    channel = bot.get_channel(RULES_CHANNEL_ID)
-
-    embed = discord.Embed(title="Regels", description="Voer de regels hier in.", color=0x00ff00)
-    embed.add_field(name="Rule 1", value="Regel.", inline=False)
-    embed.add_field(name="Rule 2", value="Regel.", inline=False)
-    embed.add_field(name="Rule 3", value="Regel.", inline=False)
-
-    await channel.send(embed=embed)
 bot.run(TOKEN)
